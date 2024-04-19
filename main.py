@@ -1,3 +1,4 @@
+import os
 import time
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -106,7 +107,7 @@ def main():
             tagged = 'ootd'
             board_name = 'doodweeb'
             section_name = 'Female'
-            image_path = 'img.jpg'
+            image_path = os.getcwd() + os.sep + 'img.jpg'
             create_pin(image_path, input_title, input_desclink, input_desc, tagged, board_name, section_name)
 
 if __name__ == "__main__":
